@@ -29,5 +29,5 @@ public class WalletController {
     public ResponseEntity createWallet(@RequestBody WalletDto wallet) {
         WalletDto result = walletService.createWallet(wallet);
         return new ResponseEntity(result, HttpStatus.OK);
-    }
+    })
 }
