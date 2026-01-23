@@ -13,12 +13,4 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner flywayCheck(ApplicationContext ctx) {
-		return args -> {
-			System.out.println("Flyway bean present: " +
-					ctx.containsBean("flyway"));
-		};
-	}
-
 }
